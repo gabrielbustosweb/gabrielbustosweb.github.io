@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Raleway:wght@500;700;900&display=swap');
 :root{
 	/** Colores **/
-	--colorPrimario: #19d3da;
+	--colorPrimario: #52575d;
+	--amarillo: #fddb3a;
 	--grisOscuro: #373a40;
 	--grisClaro: #686d76;
-	--base: #eeeeee;
+	--base: #f6f4e6;
 
 	/** Fuentes **/
 	--fuentePrincipal: 'DM Sans', sans-serif;
@@ -73,11 +74,12 @@ img {
 }
 .seccion {
     padding: 5rem 0;
+    background-color: var(--base);
 }
 @media (min-width: 768px) {
     .seccion {
         position: relative;
-        background-color: var(--base);
+        background-color: white;
         margin-top: -9rem;
         padding: 6rem;
     }
@@ -109,7 +111,7 @@ header.site-header {
     }
 }
 .site-header {
-    background-image: url("../image/header.jpg");
+    background-image: url("../image/baner01.png");
     padding: 2rem 0;
 }
 @media (min-width: 768px) {
@@ -129,7 +131,7 @@ header.site-header {
         width: 100%;
         top: 0;
         left: 0;
-        background-color: var(--grisOscuro);
+        background-color: var(--amarillo);
         padding: 1rem 5rem;
         height: 10rem;
         z-index: 10000;
@@ -244,7 +246,7 @@ body.home .slicknav_menu {
     }
 }
 .slicknav_btn {
-    background-color: var(--colorPrimario);
+    background-color: var(--amarillo);
     margin: 3rem 0;
     padding: 1.5rem;
 }
