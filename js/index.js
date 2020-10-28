@@ -22,3 +22,15 @@ window.onscroll = () => {
         headerNav.classList.remove('fixed-top');
     }
 }
+
+$("#switch").click(function () {
+    if ($("#fullpage").hasClass("night")) {
+        $("#fullpage").removeClass("night");
+        $("#switch").removeClass("switched");
+    }
+    else {
+        $("#fullpage").addClass("night");
+        $("#switch").addClass("switched");
+
+    }
+});
