@@ -242,13 +242,12 @@ img {
 
 /** Reescribir Estilos menú movil **/
 .slicknav_menu {
-  background-color: transparent;
-}
-.slicknav_menu {
+  position: fixed;
   background-color: var(--amarillo);
-  display: flex;
+  display: block;
   align-items: center;
-  flex-direction: column;
+  width: 100%;
+  top: 0;
 }
 @media (min-width: 768px) {
     .slicknav_menu {
@@ -256,16 +255,20 @@ img {
     }
 }
 .slicknav_btn {
+ 
     background-color: var(--grisOscuro);
-    margin: 3rem 0;
+    margin: .3rem 0;
     padding: 1.5rem;
+    z-index: 10000;
 }
+
 .slicknav_nav a {
     font-size: 2.4rem;
     text-align: center;
     font-family: var(--fuentePrincipal);
     color: var(--grisClaro);
 }
+
 .slicknav_nav a:hover {
     background: transparent;
     color: var(--colorPrimario);
