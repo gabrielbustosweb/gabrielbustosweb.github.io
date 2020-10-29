@@ -27,10 +27,12 @@ $("#switch").click(function () {
     if ($("#fullpage").hasClass("night")) {
         $("#fullpage").removeClass("night");
         $("#switch").removeClass("switched");
+        document.getElementById("modo").innerHTML = "Cambiar a modo noche";
     }
     else {
         $("#fullpage").addClass("night");
         $("#switch").addClass("switched");
+        document.getElementById("modo").innerHTML = "Cambiar a modo día";
 
     }
 });
