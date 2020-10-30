@@ -6,6 +6,7 @@
 	--grisOscuro: #373a40;
 	--grisClaro: #686d76;
 	--base: #f6f4e6;
+  --blanco: #fff;
 
 	/** Fuentes **/
 	--fuentePrincipal: 'DM Sans', sans-serif;
@@ -81,7 +82,7 @@ img {
     width: 100%;
     height: auto;
     color: #555;
-  
+    border-radius: 10px 0px 0px 45px;
     -webkit-transition: background 0.5s ease-in-out;
         transition: background 0.5s ease-in-out;
 }
@@ -153,23 +154,17 @@ img {
 }
 
 .logo {
+    position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 50%;
+    padding-left: 5rem;
+    top: 1rem;
+    font-family: var(--fuenteHeadings);
+    font-weight: 900;
 }
-
-.tagline {
-    color: var(--base);
-    margin-top: 5rem;
-}
-@media (min-width: 768px) {
-    .tagline {
-        grid-row: 3 / 4;
-        grid-column: 2 / 4;
-        margin-top: 0;
-    }
-}
-.tagline p {
-    font-size: 2rem;
+.logo a {
+  color: var(--grisOscuro);
 }
 
 /** Menu Principal **/
@@ -248,6 +243,7 @@ img {
   align-items: center;
   width: 100%;
   top: 0;
+  border-radius: 0px 0px 0px 45px;
 }
 @media (min-width: 768px) {
     .slicknav_menu {
@@ -255,11 +251,10 @@ img {
     }
 }
 .slicknav_btn {
- 
     background-color: var(--grisOscuro);
     margin: .3rem 0;
     padding: 1.5rem;
-    z-index: 10000;
+    border-radius: 50px;
 }
 
 .slicknav_nav a {
