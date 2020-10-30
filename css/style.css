@@ -76,7 +76,7 @@ img {
 }
 .section {
     padding: 9rem;
-    padding-top: 40px;
+    padding-top: 2rem;
     font-size: 1em;
     background: var(--base);
     width: 100%;
@@ -84,7 +84,6 @@ img {
     color: var(--grisOscuro);
     border-radius: 10px 0px 0px 45px;
 }
-
 
 /** Header **/
 .site-header {
@@ -109,15 +108,6 @@ img {
         height: 100vh;
         max-height:900px;
     }
-    .header-grid {
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .header-grid .barra-navegacion {
-        grid-column: 1 / 5;
-    }
 }
 .site-header {
     background-image: url("../image/baner02.jpg");
@@ -133,7 +123,7 @@ img {
 /** Barra fija **/
 @media (min-width: 768px) {
     body.ft-activo {
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
     .fixed-top {
         position: fixed;
@@ -142,7 +132,7 @@ img {
         left: 0;
         background-color: var(--amarillo);
         padding: 1rem 5rem;
-        height: 10rem;
+        height: 6rem;
         z-index: 10000;
         transition: all .3s ease;
     }
@@ -152,21 +142,21 @@ img {
     position: fixed;
     display: flex;
     justify-content: flex-start;
-    width: 50%;
-    padding-left: 5rem;
+    width: 20%;
     top: 1rem;
     font-family: var(--fuenteHeadings);
     font-weight: 900;
 }
 .logo a {
   color: var(--grisOscuro);
+  padding-left: 5rem;
 }
 @media (min-width: 768px) {
     .logo {
-        position: block;
+        position: absolute;
         width: 100%;
         padding-left: 5rem;
-        top: 3.5rem;
+        top: 1.5rem;
     }
 }
 
@@ -267,4 +257,27 @@ img {
 .slicknav_nav a:hover {
     background: transparent;
     color: var(--colorPrimario);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    background-color: var(--grisOscuro);
+}
+.content-footer{
+    color: #696969;
+    column-count: 2;
+    column-gap: 50px;
+    font-size: 5px;
+    font-weight: 300;
+}
+.copyright{
+    color: var(--blanco);
+    text-align: center;
+    font-size: .3rem;
+}
+.copyright a {
+    color: var(--grisClaro);
 }

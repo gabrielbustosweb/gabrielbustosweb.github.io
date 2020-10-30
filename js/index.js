@@ -37,5 +37,5 @@ window.onscroll = () => {
         slickNav.classList.remove('fixed-top');
         headerNav.classList.remove('fixed-top');
     }
-}
+};
 
