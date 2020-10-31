@@ -150,6 +150,10 @@ img {
   color: var(--grisOscuro);
   padding-left: 5rem;
 }
+.logo img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
 @media (min-width: 768px) {
     .logo {
         position: absolute;
@@ -211,10 +215,12 @@ img {
     .menu-principal a::before {
         top: 0;
         transform-origin: left;
+        border-radius: 20px 20px 0px 0px;
     }
     .menu-principal a::after {
         top:50%;
         transform-origin: right;
+        border-radius: 0px 0px 20px 20px;
     }
     .menu-principal a:hover::before {
         transform: scaleX(1);
