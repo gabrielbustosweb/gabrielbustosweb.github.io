@@ -289,6 +289,12 @@ img {
 .about-description{
     text-align: center;
 }
+.about-description a {
+    color: var(--grisClaro);
+}
+.about-description a:hover {
+    color: var(--amarillo);
+}
 .about-cards{
     display: flex;
     flex-direction: column;
