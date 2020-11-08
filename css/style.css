@@ -76,7 +76,6 @@ img {
     color: var(--colorPrimario);
 }
 .section {
-    padding: 1rem;
     padding-top: 2rem;
     font-size: 1em;
     background: var(--base);
