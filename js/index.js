@@ -50,4 +50,4 @@ ScrollReveal({
 }).reveal('.segundo', { delay: 300 });
 ScrollReveal({
 	reset: true
-}).reveal('.tercero', { delay: 600 });
+}).reveal('.tercero', { delay: 500 });
