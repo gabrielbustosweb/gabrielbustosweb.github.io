@@ -75,7 +75,7 @@ img {
     color: var(--colorPrimario);
 }
 .section {
-    padding: 9rem;
+    padding: 1rem;
     padding-top: 2rem;
     font-size: 1em;
     background: var(--base);
@@ -300,6 +300,9 @@ img {
     flex-direction: column;
     padding-top: 2rem;
 }
+.card {
+    text-align: center;
+}
 .card i {
         font-size: 20rem;
         color: var(--amarillo);
@@ -311,9 +314,6 @@ img {
 @media (min-width: 1050px) {
     .about-cards{
         flex-direction: row;
-    }
-    .card{
-        text-align: center;
     }
     .card p{
         padding: 2rem;
