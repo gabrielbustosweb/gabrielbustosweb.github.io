@@ -39,9 +39,15 @@ window.onscroll = () => {
     }
 };
 $(".toTop").click(function () {
-   //1 second of animation time
-   //html works for FFX but not Chrome
-   //body works for Chrome but not FFX
-   //This strange selector seems to work universally
    $("html, body").animate({scrollTop: 0}, 1000);
 });
+
+ScrollReveal({
+	reset: true
+}).reveal('.primero', { delay: 100 });
+ScrollReveal({
+	reset: true
+}).reveal('.segundo', { delay: 300 });
+ScrollReveal({
+	reset: true
+}).reveal('.tercero', { delay: 600 });
