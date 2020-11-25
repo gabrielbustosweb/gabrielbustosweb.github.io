@@ -40,8 +40,6 @@ h1 {
 }
 h2 {
     font-size: 4rem;
-    text-align:center;
-    color: var(--colorPrimario);
 }
 h3 {
     font-size: 3rem;
@@ -59,22 +57,11 @@ ul {
     margin: 0;
     list-style: none;
 }
-.contenedor {
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 img {
     max-width: 100%;
     height: auto;
 }
 /* Utilidades **/
-.text-center {
-    text-align: center;
-}
-.texto-primario {
-    color: var(--colorPrimario);
-}
 .section {
     padding-top: 2rem;
     padding-bottom: 2rem; 
@@ -93,11 +80,12 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
 }
-.site-header h2 {
+.site-header h1 {
+   text-align:center;
+  color: var(--colorPrimario);
   padding-top: 8rem;
 }
 .site-header p {
-  font-family: var(--fuenteHeadings);
   text-align: center;
   color: var(--colorPrimario);
   padding-top: 1rem;
@@ -142,7 +130,7 @@ img {
     display: flex;
     justify-content: flex-start;
     width: 20%;
-    top: 1rem;
+    top: 2rem;
     font-family: var(--fuenteHeadings);
     font-weight: 900;
 }
@@ -232,7 +220,7 @@ img {
 
 /** Reescribir Estilos menú movil **/
 .slicknav_menu {
-  padding: 0;
+  padding: 20px 0 10px 0;
   position: fixed;
   background-color: var(--amarillo);
   display: block;
@@ -248,13 +236,14 @@ img {
 }
 .slicknav_btn {
     background-color: var(--colorPrimario);
-    margin: .3rem 0;
-    padding: 1.5rem;
+    margin: 0;
+    padding: 1rem;
     border-radius: 50px;
+    right: 2rem;
 }
 
 .slicknav_nav a {
-    font-size: 2.4rem;
+    font-size: 3rem;
     text-align: center;
     font-family: var(--fuentePrincipal);
     color: var(--grisClaro);
@@ -289,7 +278,8 @@ img {
     
 }
 .about-description{
-    text-align: center;
+    text-align: left;
+    padding-left: 40px;
 }
 .about-description a {
     color: var(--grisClaro);
@@ -301,15 +291,23 @@ img {
 .about-cards{
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
 }
 .card {
     text-align: center;
+    padding-top: 2rem;
 }
 .card i {
         font-size: 20rem;
-        color: var(--amarillo);
     }
+.wordpress-color i{
+    color: #00749C;
+}
+.angular-color i{
+    color: #B52E31;
+}
+.css3-color i{
+    color: #264de4;
+}
 .card p{
     font-size: 1,1rem;
 }
@@ -321,6 +319,19 @@ img {
     .card p{
         padding: 2rem;
     }
+}
+.card button {
+    color: var(--colorPrimario);
+    background-color: var(--amarillo);
+    border-radius: 20px;
+    border: none;
+    padding: 6px 10px 6px 10px;
+    box-shadow: 2px 2px 5px #999;
+}
+.card button:hover{
+    color: var(--blanco);
+    background-color: var(--colorPrimario);
+    cursor: pointer;
 }
 
 /* Seccion contacto */
@@ -346,9 +357,13 @@ input, textarea {
 textarea{
     height: 300px;
 }
-
+.btn-send {
+    box-shadow: 2px 2px 5px #999;
+    color: var(--colorPrimario);
+}
 .btn-send:hover{
     background-color: var(--grisClaro);
+    color: var(--blanco);
 }
 /* Footer */
 footer {

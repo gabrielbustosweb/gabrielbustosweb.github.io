@@ -44,10 +44,10 @@ $(".toTop").click(function () {
 
 ScrollReveal({
 	reset: true
-}).reveal('.primero', { delay: 100 });
+}).reveal('.wordpress-color', { delay: 100 });
 ScrollReveal({
 	reset: true
-}).reveal('.segundo', { delay: 300 });
+}).reveal('.angular-color', { delay: 300 });
 ScrollReveal({
 	reset: true
-}).reveal('.tercero', { delay: 500 });
+}).reveal('.css3-color', { delay: 500 });
